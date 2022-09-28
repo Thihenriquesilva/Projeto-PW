@@ -253,8 +253,23 @@ ul {
     }
   }
 
-/*carroussel*/
+/*carrossel*/
+#carrossel img{
+  height: 600px;
+  max-width: 100%;
+}
+#carrossel{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  /* border: 1px solid black; */
+  box-shadow: 0px 2px 3px 0px #00000011, 0px 2px 5px 0px #00000011;
+}
 
+/*Altera cor dos indicadores do carrossel*/
+.carousel .carousel-indicators li {  background-color: #15161D; }
+.carousel .carousel-indicators li.active { background-color: black; }
 
 /*footer*/
 #footer {
