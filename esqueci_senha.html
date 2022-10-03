@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8">
+        <title>Esqueci a senha</title>
+        <!--bootstrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<!--icons bootstrap-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!---->
+        <link type="text/css" rel="stylesheet" href="css/style-global.css"/>
+		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+		
+		
+		<script lang="javascript" src="js/javascript.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <header>
+			<div id="top-header">
+				<div class="container">
+					<ul class="header-links pull-right">
+						<li></li>
+						<li><a href="#"><i class="fa fa-user-o"></i>Minha Conta</a></li>
+					</ul>
+				</div>
+			</div>
+	
+			<div id="header" >
+		<div class="container">
+		  <div class="col-md-3">
+			<div class="header-logo">
+			  <a href="#" class="logo">
+				<img  id="logo-img" src="img/IDlogo.png" alt="">
+			  </a>
+			</div>
+		  </div>
+		  <div class="col-md-8">
+			<div class="header-search">
+			  <form id="formulario" action="./busca.html">
+				<input id="pesquisa" class="input">
+						<button type="button" class="search-btn" onclick="validaPesquisa()">Pesquisar</button>
+			  </form>
+			</div>
+		  </div>
+		  <div class="col-md-1 ">
+			<div class="box-carrinho-menu pull-right">
+			  <div class="header-carrinho">
+				<a href="#">
+				  <i class="fa fa-shopping-cart"></i>
+				  <span>Carrinho</span>
+				  <div class="qtd">0</div>
+				</a>
+			  </div>
+			  <div class="menu-toggle" onclick="MenuToggle();">
+				<a href="#">
+				  <i class="fa fa-bars"></i>
+				  <span>Menu</span>
+				</a>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+		</header>
+	
+		<nav id="navigation">
+	  <div class="container">
+		<div id="responsivo-nav">
+		  <ul class="main-nav nav navbar-nav">
+			<li class="active"><a href="#">HOME</a></li>
+			<li><a href="./produtos.html">TELEFONIA</a></li>
+			<li><a href="#">ELETRODOMÉSTICOS</a></li>
+			<li><a href="#">TVS E VÍDEO</a></li>
+			<li><a href="#">ELETROPORTÁTEIS</a></li>
+			<li><a href="#">INFORMÁTICA</a></li>
+			<li><a href="#">SERVIÇOS</a></li>
+		  </ul>
+		</div>
+	  </div>
+	</nav>
+
+        <br/>
+
+        <h3 class="login-cadastro"> Esqueci a senha</h3><br/>
+           
+ <!-- div da caixa que guarda o formulario -->
+     <div id="esqueci-container">
+         <h4><b> Informe seu e-mail: </b></h4>
+         <i> e-mail para reset de senha será enviado. </i>
+
+		 <!-- div que guarda o e-mail -->
+		 <div id="div-esqueci">
+		 <form class="form-horizontal" action="./login.html" id="form-senha">
+          <div id="emailesqueci">
+           <input type="email"
+	
+		     class="form-control"
+			 required="required"
+			 id="esqueciemail"
+			 placeholder="Digite seu e-mail">
+          </div>
+
+		  <!-- div do botão para enviar -->
+          <div class="form-group">        
+            <div class="col-sm-offset-2 col-sm-10">
+              <br>
+              <button id="esquecibtn" type="submit" class="btn btn-danger">Enviar</button>
+            </div>
+          </div>
+          </div>
+		  </div>
+		</form>
+        
+
+        <br/>
+
+
+
+		
+		<footer id="footer">
+			<div class="section">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">Atendimento</h3>
+								<ul class="footer-links">
+									<li><a href="#">Minha conta</a></li>
+									<li><a href="#">Meus pedidos</a></li>
+									<li><a href="#">Encontre uma loja</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">Serviços</h3>
+								<ul class="footer-links">
+                                    <li><a href="#">Minhas listas</a></li>
+                                    <li><a href="#">Marketplace</a></li>
+                                    <li><a href="#">Apoio ao seller</a></li>
+                                    <li><a href="#">Perguntas frequentes</a></li>
+									<li><a href="#">Central de Privacidade</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="clearfix visible-xs"></div>
+
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">Institucional</h3>
+								<ul class="footer-links">
+                                    <li><a href="#">Grupo IDFOUR</a></li>
+                                    <li><a href="#">Trabalhe conosco</a></li>
+                                    <li><a href="#">Black Friday</a></li>
+                                    <li><a href="#">Mapa de Produtos</a></li>
+									<li><a href="#">Mapa do Site</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">Políticas IDFOUR</h3>
+								<ul class="footer-links">
+                                    <li><a href="#">Política de entregas</a></li>
+                                    <li><a href="#">Política de Trocas e Devoluções</a></li>
+                                    <li><a href="#">Política de Cancelamento e Ressarcimento</a></li>
+                                    <li><a href="#">Política Retire na Loja</a></li>
+									<li><a href="#">Termos de Uso</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="bottom-footer" >
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 text-center">
+                            <p>Desenvolvido por <i>Alan , Alberto , Beatris , Bianca e Thiago.</i></p>
+							<p>2022 &copy Todos os direitos reservados.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+</body>
+</html>

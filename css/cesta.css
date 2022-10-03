@@ -1,0 +1,50 @@
+#tela{
+  background-color: rgba(251, 249, 249, 0.78);
+}
+
+#geral{
+    padding: 15px;
+    font-size:larger;
+  
+  }
+ 
+  #topicos{
+    font-size:larger;
+   
+  }
+  #produtos {
+    font-size: 18px;
+    justify-content: space-between;
+    /*border-bottom: gray 0.1px solid;*/
+  }
+  
+  #total{
+  font-size: 16px;
+  padding-left: 25%;
+  margin:auto;
+  }
+
+  #botoes{
+    margin-bottom: 15px;
+    margin-top: 25px;
+   /*argin-left: 20%;*/
+    /*margin-right: 600px;*/
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #link{
+    font-size: 15px;
+    color: rgb(22, 84, 112);
+    margin-left:20px ;
+  }
+  .center{
+    margin:auto;
+  }
+  @media only screen and (max-width:500px) {
+    .btn-danger {
+        width: 100%;
+      
+      }
+  }
+  

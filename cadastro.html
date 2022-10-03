@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8">
+        <title>Cadastro</title>
+        <!--bootstrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<!--icons bootstrap-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!---->
+        <link type="text/css" rel="stylesheet" href="css/style-global.css"/>
+		    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+
+    <script lang="javascript" src="js/javascript.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+      <header>
+        <div id="top-header">
+            <div class="container">
+                <ul class="header-links pull-right">
+                    <li></li>
+                    <li><a href="#"><i class="fa fa-user-o"></i>Minha Conta</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="header" >
+    <div class="container">
+      <div class="col-md-3">
+        <div class="header-logo">
+          <a href="#" class="logo">
+            <img  id="logo-img" src="img/IDlogo.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="header-search">
+          <form id="formulario" action="./busca.html">
+            <input id="pesquisa" class="input">
+                    <button type="button" class="search-btn" onclick="validaPesquisa()">Pesquisar</button>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-1 ">
+        <div class="box-carrinho-menu pull-right">
+          <div class="header-carrinho">
+            <a href="#">
+              <i class="fa fa-shopping-cart"></i>
+              <span>Carrinho</span>
+              <div class="qtd">0</div>
+            </a>
+          </div>
+          <div class="menu-toggle" onclick="MenuToggle();">
+            <a href="#">
+              <i class="fa fa-bars"></i>
+              <span>Menu</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </header>
+
+    <nav id="navigation">
+  <div class="container">
+    <div id="responsivo-nav">
+      <ul class="main-nav nav navbar-nav">
+        <li ><a href="#">HOME</a></li>
+        <li><a href="./produtos.html">TELEFONIA</a></li>
+        <li><a href="#">ELETRODOMÉSTICOS</a></li>
+        <li><a href="#">TVS E VÍDEO</a></li>
+        <li><a href="#">ELETROPORTÁTEIS</a></li>
+        <li><a href="#">INFORMÁTICA</a></li>
+        <li><a href="#">SERVIÇOS</a></li>
+        <li><a href="./login.html">LOGIN</a></li>
+						<li class="active"><a href="./cadastro.html">CADASTRE-SE</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+        <br/>
+
+        <!-- Cadastro -->
+        <h3 class="login-cadastro"> Cadastro</h3><br/>
+           
+        <!-- div da caixa que guarda o formulario -->
+     <div id="cadastro-container"> <br/>  
+      <!-- inicio formulário -->
+
+            <form class="form-horizontal" action="./login.html" id="form-cadastro">
+              <!-- div para nome -->
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="nomecadastro" >nome:</label>
+                    <div class="col-sm-10">
+                      <input type="name"
+                        class="form-control"
+                        id="nomecadastro" 
+                        pattern="[A-z ]{6,100}"
+                        required="required" 
+                        placeholder="Digite seu nome completo.">
+                    </div>
+                  </div>
+
+                  <!-- div para e-mail -->
+                <div class="form-group">
+                  <label class="control-label col-sm-2" for="emailcadastro" >e-mail:</label>
+                  <div class="col-sm-10">
+                      <input type="email"
+                      class="form-control"
+                      id="emailcadastro"
+                      required="required" 
+                      placeholder="Digite seu e-mail.">
+                  </div>
+                  </div>
+
+                  <!-- div para cpf -->
+                  <div class="form-group">
+                    <label class="control-label col-sm-2" for="cpfcadastro">CPF:</label>
+                    <div class="col-sm-10">          
+                      <input type="text"
+                        class="form-control"
+                        pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}"
+                        id="cpfcadastro" 
+                        required="required" 
+                        placeholder="XXX.XXX.XXX-XX">
+                    </div>
+                  </div>
+
+                  <!-- div para telefone -->
+                  <div class="form-group">
+                    <label class="control-label col-sm-2" for="telcadastro">Telefone:</label>
+                    <div class="col-sm-10">          
+                      <input type="text"
+                        required="required" 
+                        pattern="[0-9]{4,5}-[0-9]{4}"
+                        class="form-control"
+                        id="telcadastro"
+                        placeholder="XXXXX-XXXX">
+                    </div>
+                  </div>
+
+                  <!-- div para senha -->
+                <div class="form-group">
+                  <label class="control-label col-sm-2" for="senhacadastro">senha:</label>
+                  <div class="col-sm-10">          
+                    <input type="password"
+                      pattern="^(?=.*[A-Z])(?=.*[!#@$%&-+_(){}])(?=.*[0-9])(?=.*[a-z]).{6,25}$"
+                      class="form-control" 
+                      id="senhacadastro"
+                      required="required"
+                      placeholder="Digite sua senha.">
+                  </div>
+                </div>
+
+                <!-- div para confirmar senha -->
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="confirm_senhacadastro">confirmar senha:</label>
+                    <div class="col-sm-10">          
+                      <input type="password"
+                       class="form-control" 
+                       id="confirm_senhacadastro" 
+                       required="required" 
+                       placeholder="Confirme sua senha.">
+                    </div>
+                  </div>
+
+                  <!-- div para o botão Cadastrar -->
+                <div class="form-group">        
+                  <div class="col-sm-offset-2 col-sm-10">
+                    <button id="btncadastro" onclick="validarsenha();" type="submit" class="btn btn-danger">Cadastrar</button>
+                  </div>
+                </div>
+              </form>
+        </div>
+
+        <br/>
+
+             <!-- Confirmação de senha -->
+             <script lang="javascript">
+
+              function validarsenha (){
+                if(senhacadastro.value == ""){
+                  alert("Dados não foram completamente preenchidos.");
+                    senhacadastro.focus;
+                    return false;
+                }
+               if(senhacadastro.value != confirm_senhacadastro.value){
+                    alert("As senhas não coincidem.");
+                    confirm_senhacadastro.value = "";
+                    confirm_senhacadastro.focus;
+                    return false;
+                  }
+  
+                  formcadastro.submit();
+                }
+                </script>
+    
+
+    <footer id="footer">
+			<div class="section">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">Atendimento</h3>
+								<ul class="footer-links">
+									<li><a href="#">Minha conta</a></li>
+									<li><a href="#">Meus pedidos</a></li>
+									<li><a href="#">Encontre uma loja</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">Serviços</h3>
+								<ul class="footer-links">
+                                    <li><a href="#">Minhas listas</a></li>
+                                    <li><a href="#">Marketplace</a></li>
+                                    <li><a href="#">Apoio ao seller</a></li>
+                                    <li><a href="#">Perguntas frequentes</a></li>
+									<li><a href="#">Central de Privacidade</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="clearfix visible-xs"></div>
+
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">Institucional</h3>
+								<ul class="footer-links">
+                                    <li><a href="#">Grupo IDFOUR</a></li>
+                                    <li><a href="#">Trabalhe conosco</a></li>
+                                    <li><a href="#">Black Friday</a></li>
+                                    <li><a href="#">Mapa de Produtos</a></li>
+									<li><a href="#">Mapa do Site</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">Políticas IDFOUR</h3>
+								<ul class="footer-links">
+                                    <li><a href="#">Política de entregas</a></li>
+                                    <li><a href="#">Política de Trocas e Devoluções</a></li>
+                                    <li><a href="#">Política de Cancelamento e Ressarcimento</a></li>
+                                    <li><a href="#">Política Retire na Loja</a></li>
+									<li><a href="#">Termos de Uso</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="bottom-footer" >
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 text-center">
+                            <p>Desenvolvido por <i>Alan , Alberto , Beatris , Bianca e Thiago.</i></p>
+							<p>2022 &copy Todos os direitos reservados.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+</body>
+</html>

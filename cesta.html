@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!---->
         <link type="text/css" rel="stylesheet" href="css/style.css"/>
+        <link type="text/css" rel="stylesheet" href="css/cesta.css"/>
 		<link rel="icon" href="img/IDlogo.png" type="imagem/png">
 
 		<script lang="javascript" src="js/javascript.js"></script>
@@ -31,8 +32,8 @@
 				<div class="container">
 					<div class="col-md-3">
 						<div class="header-logo">
-							<a href="#" class="logo">
-								<img  id="logo-img" src="img/IDlogo.png" alt="">
+							<a href="./index.html" class="logo">
+								<img id="logo-img" src="img/IDlogo.png" alt="">
 							</a>
 						</div>
 					</div>
@@ -69,7 +70,7 @@
 			<div class="container">
 				<div id="responsivo-nav">
 					<ul class="main-nav nav navbar-nav">
-						<li class="active"><a href="#">HOME</a></li>
+						<li ><a href="./index.html">HOME</a></li>
 						<li><a href="./produtos.html">TELEFONIA</a></li>
 						<li><a href="#">ELETRODOMÉSTICOS</a></li>
 						<li><a href="#">TVS E VÍDEO</a></li>
@@ -82,79 +83,71 @@
 				</div>
 			</div>
 		</nav>
-
-			<div id="carrossel" class="container">
-				<a href="#">
-					<div id="myCarousel" class="carousel slide" data-ride="carousel">
-						<!-- ordem das imagens -->
-						<ol class="carousel-indicators">
-							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-							<li data-target="#myCarousel" data-slide-to="1"></li>
-							<li data-target="#myCarousel" data-slide-to="2"></li>
-						</ol>
-					
-						<!--slides-->
-						<div class="carousel-inner">
-							<div class="item active">
-								<img src="https://carrefourbr.vtexassets.com/assets/vtex.file-manager-graphql/images/2cc7a84e-aaf3-4e04-b5c1-cee68c560fef___80827cc88700681ad47f111ba910853f.png" alt="Los Angeles" style="width:100%;">
-							</div>
-					
-							<div class="item">
-								<img src="https://carrefourbr.vtexassets.com/assets/vtex.file-manager-graphql/images/2cc7a84e-aaf3-4e04-b5c1-cee68c560fef___80827cc88700681ad47f111ba910853f.png" alt="Chicago" style="width:100%;">
-							</div>
-						
-							<div class="item">
-								<img src="https://carrefourbr.vtexassets.com/assets/vtex.file-manager-graphql/images/2cc7a84e-aaf3-4e04-b5c1-cee68c560fef___80827cc88700681ad47f111ba910853f.png" alt="New york" style="width:100%;">
-							</div>
-						</div>
-					</div>
-				</a>
-			</div>
-
-		<div class="section">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4 col-xs-6">
-						<div class="shop">
-							<div class="shop-img">
-								<img src="img/produtoimagem.png" alt="">
-							</div>
-							<div class="shop-body">
-								<h3>Laptop<br>Collection</h3>
-								<a href="#" class="cta-btn">Compre agora <i class="fa fa-arrow-circle-right"></i></a>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4 col-xs-6">
-						<div class="shop">
-							<div class="shop-img">
-								<img src="img/produtoimagem.png" alt="">
-							</div>
-							<div class="shop-body">
-								<h3>Accessories<br>Collection</h3>
-								<a href="#" class="cta-btn">Compre agora <i class="fa fa-arrow-circle-right"></i></a>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4 col-xs-6">
-						<div class="shop">
-							<div class="shop-img">
-								<img src="img/produtoimagem.png" alt="">
-							</div>
-							<div class="shop-body">
-								<h3>Cameras<br>Collection</h3>
-								<a href="#" class="cta-btn">Compre agora <i class="fa fa-arrow-circle-right"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
+		
+		<div id="geral" class="container">
+			<h1 class="titulo">Cesta<i Class="fa fa-shopping-cart"></i></h1>                                                                                    
+			<div id="tela" class="table-responsive">          
+				<table class="table">
+					<thead >
+						<tr id="topicos">
+							<th class="col-sm-5">Produto</th>
+							<th class="col-sm-5">Quantidade</th>
+							<th class="col-sm-5">Valor</th>
+						</tr>
+					</thead>
+					<tbody id="produtos">
+						<tr>			
+							<td>Galaxy Z Flip4 <a id="link" href="./detalhes.html">						
+								<i>Rever detalhes</i></a></td>
+							<td> X2 </td>
+							<td>R$ 6.299,00</td>
+						</tr>
+						<tr>			
+							<td>Cartão Micro SD <a id="link" href="LINK OU CAMINHO DO DETALHE DA BIANCA">						
+								<i>Rever detalhes</i></a></td>
+							<td>X1</td>
+							<td>R$ 132,42</td>
+						</tr>
+						<tr>			
+							<td>Galaxy Watch 5 <a id="link" href="LINK OU CAMINHO DO DETALHE DA BIANCA">						
+								<i>Rever detalhes</i></a></td>
+							<td>X1</td>
+							<td>R$2.249,10</td>
+						</tr>
+						<tr>			
+							<td>Carregador Turbo <a id="link" href="LINK OU CAMINHO DO DETALHE DA BIANCA">						
+								<i>Rever detalhes</i></a></td>
+							<td>X3</td>
+							<td>R$ 119,19</td>
+						</tr>
+						<tr>			
+							<td>Adaptador USB-C <a id="link" href="LINK OU CAMINHO DO DETALHE DA BIANCA">						
+								<i>Rever detalhes</i></a></td>
+							<td>X2</td>
+							<td>R$ 19,00</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 		</div>
-
+		<div id="total"class="container">
+			<div class="table-responsive">
+				<table class="table">
+					<tbody>
+						<tr class="center container class-responsive">
+							<th>Total:</th>
+							<th>R$ 15.356,09</th>
+						</tr>
+					<tbody>
+				</table>
+			</div>
+		</div>
+		<div id="botoes" class="center container button-responsive " >         
+			<button type="button" class="btn btn-danger">#Comprar mais +</button>
+			<button type="button" class="btn btn-danger ">Limpar cesta</button>
+			<button type="button" class="btn btn-danger">Finalizar</button>
+		</div>
 		
-
         <footer id="footer">
 			<div class="section">
 				<div class="container">
